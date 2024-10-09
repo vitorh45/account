@@ -40,6 +40,11 @@ Now that the project is running locally in the address http://localhost:5000 (or
 - GET /api/v1/user: With the token generated previously for the `user`, add it to the Authorization header in the following format: `Authorization: Bearer {token}`.
 - GET /api/v1/admin: With the token generated previously for the `admin`, add it to the Authorization header in the following format: `Authorization: Bearer {token}`
 
+### In order to ease the tests, there two json files with the Postman collections used to test the endpoints.
+
+- Go to Postman, on the top left side click the button `Import`. Select the file and proceed. To the same process with the two files.
+- In case you run the project in a different port, change its value in the Postman environments section. 
+
 ### Responses
 - 200: if the request is successfull
 - 401: if you try to authenticate with invalid credentials
