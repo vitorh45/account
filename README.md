@@ -5,7 +5,7 @@
  - Introduction
  - Requirements
  - Installation
- - Configuration
+ - Endpoints
 
 ## Introduction
 
