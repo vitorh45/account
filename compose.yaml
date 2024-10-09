@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5001:5000"
+    depends_on:
+      - database
+    networks:
+      - my-network
+    environment:
+      JWT_CACHE_EXPIRATION_SECONDS: 3600
+      SQLALCHEMY_DATABASE_URI: postgresql://postgres:123456@database:5432/accounttest
+      SQLALCHEMY_DATABASE_URI_TEST: postgresql://postgres:123456@database:5432/accounttest_test
+      JWT_SECRET_KEY: rKnp5qMD7xZQDrr
+  database:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: 123456
+    networks:
+      - my-network
+volumes:
+  db_data:
+networks:
+  my-network:
+    driver: bridge
+
