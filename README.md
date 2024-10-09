@@ -1,4 +1,4 @@
-# Gin Admin Theme
+# Account test
 
 ## Contents of this file
 
