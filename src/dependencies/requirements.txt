@@ -1,0 +1,13 @@
+Flask
+Flask-Cors
+flask-restx
+Flask-Migrate
+flask-jwt-extended
+gevent
+json-logging
+python-dotenv
+PyJWT
+psycopg2-binary
+requests
+uWSGI
+typing_extensions
