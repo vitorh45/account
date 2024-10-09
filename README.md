@@ -4,7 +4,7 @@
 
  - Introduction
  - Requirements
- - Installation
+ - Installation and usage
  - Endpoints
 
 ## Introduction
@@ -15,7 +15,7 @@ Accounttest is a project to simulate login and different roles permission to use
 
  - Python 3.11+
  - Postgres as database
- - Docker to create the images
+ - Docker to create the images (optional)
 
 ## Installation and usage
 
@@ -40,7 +40,7 @@ Now that the project is running locally in the address http://localhost:5000 (or
 - GET /api/v1/user: With the token generated previously for the `user`, add it to the Authorization header in the following format: `Authorization: Bearer {token}`.
 - GET /api/v1/admin: With the token generated previously for the `admin`, add it to the Authorization header in the following format: `Authorization: Bearer {token}`
 
-### In order to ease the tests, there two json files with the Postman collections used to test the endpoints.
+### In order to ease the tests, there are two json files with the Postman collections used to test the endpoints.
 
 - Go to Postman, on the top left side click the button `Import`. Select the file and proceed. To the same process with the two files.
 - In case you run the project in a different port, change its value in the Postman environments section. 
