@@ -24,6 +24,7 @@ To run the project locally, we need to follow some steps:
  - First we need to have python 3.11 installed. You can use the lib pyenv to control different python versions.
  - Is optional and recommended to use a virtualenv with the python 3.11. By doing that, you can isolate you projects environments.
  - Install the projects dependencies inside the SRC directory with run the command `pip install -r dependencies/requirements-dev.txt`.
+ - Rename the `.env_sample` file to `.env`.
  - Having a Postgres running locally, create two databases called `accounttest` and `accounttest_test`. If you change the default Postgres port, change the value in the `.env` file.
  - Create the database tables running the migration command inside the src/api dir: `flask db upgrade`
  - Run the project locally with `flask run`
