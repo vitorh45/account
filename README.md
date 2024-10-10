@@ -26,7 +26,7 @@ To run the project locally, we need to follow some steps:
  - Install the projects dependencies inside the SRC directory with run the command `pip install -r dependencies/requirements-dev.txt`.
  - Rename the `.env_sample` file to `.env`.
  - Having a Postgres running locally, create two databases called `accounttest` and `accounttest_test`. If you change the default Postgres port, change the value in the `.env` file.
- - Create the database tables running the migration command inside the src/api dir: `flask db upgrade`
+ - Create the database tables running the migration command inside the src/api dir, whether running locally or with Docker: `flask db upgrade`
  - Run the project locally with `flask run`
  - If you want to run using Docker, run the command in the project root dir `docker-compose up`. It will build and start an image of the project and a Postgres as well. Make sure you don't have another postgres instance running in the port 5342.
 - to run the unit tests and check the coverage, run the command in root dir `make test`
