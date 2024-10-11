@@ -21,6 +21,20 @@ generic_response_model = Model(
     }
 )
 
+
+token_request_model = Model(
+    "Token request",
+    {
+        "username": fields.String(
+            description="Username"
+        ),
+        "password": fields.String(
+            description="Password"
+        )
+    }
+)
+
+
 token_response_model = Model(
     "Token Response",
     {
@@ -29,3 +43,10 @@ token_response_model = Model(
         )
     }
 )
+
+
+authorization_header = {
+    "Authorization": fields.String(
+        description="Authorization: Bearer"
+    )
+}

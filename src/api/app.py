@@ -56,13 +56,7 @@ def __configure_logger(app: Flask) -> None:
 def __register_blueprints(app: Flask) -> None:
     from api.views import (
         bp_index,
-        bp_user,
-        # bp_product,
-        # bp_user,
-        # bp_wishlist
+        bp_user
     )
     app.register_blueprint(bp_index)
     app.register_blueprint(bp_user)
-    # app.register_blueprint(bp_product)
-    # app.register_blueprint(bp_user)
-    # app.register_blueprint(bp_wishlist)
